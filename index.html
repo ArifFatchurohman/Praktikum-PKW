@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <title>Praktikum PKW Minggu ke 6</title>
+    <h1>Multimedia dan Media Source dalam HTML</h1>
+
+    <ul>
+        <li>
+            <h2>Video</h2>
+            <hr>
+            <video controls width="400" height="200" loop autoplay muted preload="auto">
+                <source src="./bcsvideo.mp4" type="video/mp4">
+                <p>Browser tidak mendukung!, gunakan <a href="./bcsvideo.mp4">link</a> berikut</p>
+                <track kind="captions" src="./bcsvideo.mp4" srclang="en" label="English">
+            </video>
+        </li>
+        <li>
+            <h2>Audio</h2>
+            <hr>
+            <audio controls>
+                <source src="./anthempss.mp3" type="audio/mp3">
+                <p>Browser tidak mendukung!, gunakan <a href="./anthempss.mp3">link</a> berikut</p>
+            </audio>
+        </li>
+        <li>
+            <h2>Gambar Responsive</h2>
+            <hr>
+            <picture>
+                <source media="width: 300px" srcset="./bcsimage1.jpg">
+                <source media="(max-width: 1200px)" srcset="./bcsimage2.jpg">
+                <img src="./bcsimage1.jpg" alt="pic 1" style="width:auto">
+            </picture>
+        </li>
+    </ul>
+</html>
